@@ -1,5 +1,5 @@
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
+from flask import Blueprint
 
-db = SQLAlchemy()
-ma = Marshmallow()
+mechanic_bp = Blueprint("mechanic_bp", __name__)
+
+from . import routes
